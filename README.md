@@ -16,3 +16,4 @@ First of all you need to install the Matlab [Desktop Real-Time-Toolbox](https://
 ## RaspberryPi
 To set up the RaspberryPi is pretty easy. If you want to send data over one IP only you can connect the computer and the RaspberryPi directly with an ethernet cabel or even more easy you can use WIFI. To be honist, in never used WIFI so I realy dont know how it works out. In my case I want to send data over two IPs. I used the standard ethernet port of the Raspberry and added an USB to ethernet adapter. Now, to connect computer and Raspberry use a HUB/Switch.
 
+[[https://github.com/RitterD/RealTime-UDP-Communication-with-Simulink-and-Python/blob/main/img/Network.png]]

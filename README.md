@@ -3,6 +3,9 @@
 **Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
 
 - [Introduction](#introduction)
+- [Getting started](#getting-started)
+  - [Simulink](#simulink)
+  - [RaspberryPi](#raspberrypi)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 

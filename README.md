@@ -25,7 +25,7 @@ To set up the RaspberryPi is pretty easy. If you want to send data over one IP o
   </a>
 </p>
 
-# Set up your Simulink
+# Set up Simulink
 To send and receive data over TCP/UDP, choose the "Packet Output"/"Packet Input" blocks from the Destkop RealTime Toolbox. Open the block and "Install new board" select "standard devices" and then "UDP Protocol". Insert the IP-addres of your RaspberryPi and the portnumber. I recommend a high portnumber (4 digits at least).
 In the Input/Output section you have to adjust the packet sizes for incoming and outgoing bytestrings. For instance you send a sinwave with a datatype double (8byte) and an intege number (1byte) the Output packet size is 9Byte and the Outpacket field data types is: {'1double', '1int8} and two input/output ports will be created. 
 <b>Attention: If you use constant blocks adjust them to the sample time of your send/receive blocks.</b>
@@ -45,7 +45,7 @@ For instance, the master sends a number which will be incremented with every msg
   </a>
 </p>
 
-## Run your Model
+## Run the Model
 Now you have to run your Simulinkmodel in <b>external mode</b>. For that, go to "APPS" and select "Desktop Real-Time". There you can run your model in Real Time.
 
 # Python script for sending/receiving data

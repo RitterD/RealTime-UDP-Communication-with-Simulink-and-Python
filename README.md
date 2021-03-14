@@ -6,6 +6,10 @@
 - [Getting started](#getting-started)
   - [Simulink](#simulink)
   - [RaspberryPi](#raspberrypi)
+- [Set up your Simulink](#set-up-your-simulink)
+  - [Sequence Number](#sequence-number)
+  - [Run your Model](#run-your-model)
+- [Python script for sending/receiving data](#python-script-for-sendingreceiving-data)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 

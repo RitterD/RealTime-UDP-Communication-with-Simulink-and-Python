@@ -28,4 +28,13 @@ To set up the RaspberryPi is pretty easy. If you want to send data over one IP o
 # Set up your Simulink
 To send and receive data over TCP/UDP, choose the "Packet Output"/"Packet Input" blocks from the Destkop RealTime Toolbox. Open the block and "Install new board" select "standard devices" and then "UDP Protocol". Insert the IP-addres of your RaspberryPi and the portnumber. I recommend a high portnumber (4 digits at least).
 In the Input/Output section you have to adjust the packet sizes for incoming and outgoing bytestrings. For instance you send a sinwave with a datatype double (8byte) and an intege number (1byte) the Output packet size is 9Byte and the Outpacket field data types is: {'1double', '1int8} and two input/output ports will be created. 
-<b>Attention: If you are choosing constant blocks adjust them to the sample time of your send/receive blocks.</b>
+<b>Attention: If you use constant blocks adjust them to the sample time of your send/receive blocks.</b>
+
+## Sequence Number
+The Sequence Number is the key in this realtime concept. For instance, the master sends with every msg a sequence number and the slave sends this sequence number back you are able to check: 
+<ol>
+  <li>Is there a connection between master and slave</li>
+  <li>Is there any package loss</li>
+  <li>If the slave received the packages in the right order</li>
+  <b><li>Is the real time condition still fulfilled</li></b>
+</ol>

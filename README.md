@@ -11,6 +11,7 @@
 
 # Introduction
 This project is used to set up a real time communication between a Simulinkmodel and a RaspberryPi using UDP as transport protocol.
+<b>Parts in the Simulinkmodel are still in German... As soon as I have the time I will add a full English version as well</b>
 
 # Getting started
 ## Simulink
@@ -44,6 +45,9 @@ For instance, the master sends a number which will be incremented with every msg
   </a>
 </p>
 
+## Run your Model
+Now you have to run your Simulinkmodel in <b>external mode</b>. For that, go to "APPS" and select "Desktop Real-Time". There you can run your model in Real Time.
+
 # Python script for sending/receiving data
-For this low level networking I used the [socket lib](https://docs.python.org/3/library/socket.html) and the [struct lib](https://docs.python.org/3/library/struct.html) for decoding the byte strings. The "example_udp_tx_rx.py" is an super easy example which receives data from the Simulinkmodel, prints it out and simply sends everything back to the master. This example you can use to understand how the communication works and if you set up everything correctly in Simulink. The "udp_desktop_rt" shows you how to add additional data to the script and send it back to the master. In my project I used a second script to send/receive data over the second IP. It was convenient for finding erros and testing my model.
-Just run the scripts in your command window. Once they are running you dont have to start them again. It works like a server client. The script waits for new data to send it back to the IP which the msg came from. But remember, als long as the script is running the port you have given for the communication is blocked. 
+For this low level networking I used the [socket lib](https://docs.python.org/3/library/socket.html) and the [struct lib](https://docs.python.org/3/library/struct.html) for decoding the byte strings. The "example_udp_tx_rx.py" is an super easy example which receives data from the Simulinkmodel, prints it out and simply sends everything back to the master. This example you can use to understand how the communication works and if you set up everything correctly in Simulink. The "udp_desktop_rt" shows you how to add extra data from the slave side. In my project I used a second script to send/receive data over the second IP. It was convenient for finding erros and testing my model.
+Just run the scripts in your command window. Once they are running you dont have to start them again. It works like a server client. The script waits for new data to send it back to the IP where the message came from. But remember, als long as the script is running the port you have given for the communication is blocked. 

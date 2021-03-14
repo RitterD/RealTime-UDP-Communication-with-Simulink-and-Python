@@ -35,7 +35,7 @@ For instance, the master sends a number which will be incremented with every msg
 <ol>
   <li>Is there a connection between master and slave</li>
   <li>Is there any package loss</li>
-  <li>If the slave received the packages in the right order</li>
+  <li>Did the slave receive the packages in the right order</li>
   <b><li>Is the real time condition still fulfilled</li></b>
 </ol>
 

@@ -32,7 +32,7 @@ In the Input/Output section you have to adjust the packet sizes for incoming and
 
 ## Sequence Number
 The Sequence Number is the key in this realtime concept. With the sequence number you are upgrading your UDP-Protocol and eliminate all the disadvantages without giving up the advantages e.g. transmission speed and multicast.
-For instance, the master sends with every msg a sequence number and the slave sends this sequence number back you are able to check: 
+For instance, the master sends a number which will be incremented with every msg and the slave sends this sequence number back you are able to check: 
 <ol>
   <li>Is there a connection between master and slave</li>
   <li>Is there any package loss</li>

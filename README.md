@@ -22,7 +22,7 @@ This project is used to set up a real time communication between a Simulinkmodel
 First of all you need to install the Matlab [Desktop Real-Time-Toolbox](https://mathworks.com/products/simulink-desktop-real-time.html). It provides a RT-Kernel for your Windows/MacOS and converts your Simulinkmodel into C-Code.
 
 ## RaspberryPi
-To set up the RaspberryPi is pretty easy. If you want to send data over one IP only you can connect the computer and the RaspberryPi directly with an ethernet cabel or even more easy you can use WIFI. In my case I want to send data over two IPs. I used the standard ethernet port of the Raspberry and added an USB to ethernet adapter. Now, to connect computer and Raspberry use a HUB/Switch.
+Set up the RaspberryPi is pretty easy. If you want to send data over one IP only you can connect the computer and the RaspberryPi directly with an ethernet cabel or even more easy you can use WIFI. In my case I want to send data over two IPs. I used the standard ethernet port of the Raspberry and added an USB to ethernet adapter. Now, to connect computer and Raspberry use a HUB/Switch.
 
 <p align="center">
     <img alt="Network" title="Network" src="https://github.com/RitterD/RealTime-UDP-Communication-with-Simulink-and-Python/blob/main/img/Network.png">
